@@ -1,0 +1,55 @@
+4. Со командата mkdir правиме директориум со името SI_2024_lab1_INDEX, со командата cd влегуваме во него, а со командата git init иницијализираме гит репозиториум во директориумот.
+5. Со git remote add го додаваме репозиториумот во папката а тоа можеме да го провериме со git remote -v.
+HP@DESKTOP-L2TN6RI MINGW64 ~/SI_2024_lab1_223167 (master)
+$ git remote add origin https://github.com/maneva133/SI_2024_lab1_223167.git
+
+HP@DESKTOP-L2TN6RI MINGW64 ~/SI_2024_lab1_223167 (master)
+$ git remote -v
+origin  https://github.com/maneva133/SI_2024_lab1_223167.git (fetch)
+origin  https://github.com/maneva133/SI_2024_lab1_223167.git (push)
+6. Со nano ја направивме датотеката, можеме да видиме со помош на командата ls, потоа најпрво со add ја додадовме да биде staged па потоа со commit -m ја комитнавме.
+HP@DESKTOP-L2TN6RI MINGW64 ~/SI_2024_lab1_223167 (master)
+$ nano README.md
+
+HP@DESKTOP-L2TN6RI MINGW64 ~/SI_2024_lab1_223167 (master)
+$ ls
+README.md
+
+HP@DESKTOP-L2TN6RI MINGW64 ~/SI_2024_lab1_223167 (master)
+$ git add .
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+HP@DESKTOP-L2TN6RI MINGW64 ~/SI_2024_lab1_223167 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+
+HP@DESKTOP-L2TN6RI MINGW64 ~/SI_2024_lab1_223167 (master)
+$ git commit -m "Initial commit"
+[master (root-commit) 9ace097] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+9. Отвараме 2 гранки со branch.
+Ги правиме соодветните промени на гранките и комитнуваме.
+Правиме push на master,bug1, bug2 гранките на remote репото.
+23. Се јавува конфликт бидејќи имаме измени во иста линија во ист фајл. Го решив проблемот така што го оставив повикот и на двете функции но во различен ред.
+Искористив rebase master потоа со помош на nano ја изменив SILab1Main.java и на крај искористив rebase -continue.
+25. $ git checkout master
+Switched to branch 'master'
+
+HP@DESKTOP-L2TN6RI MINGW64 ~/SI_2024_lab1_223167 (master)
+$ git rebase bug2
+Successfully rebased and updated refs/heads/master.
+26. git push origin master
+git push origin bug1
+git push --force bug2
+
+
+
+

@@ -1,0 +1,57 @@
+HP@DESKTOP-L2TN6RI MINGW64 ~/SI_2024_lab1_223167 (master)
+$ git log
+commit 0c44e8b7a3611b18feb65ccb6d71fa4c13b67ba9 (HEAD -> master)
+Merge: 5ec6846 0fa319a
+Author: Maja <majamaneva51@gmail.com>
+Date:   Tue Mar 26 20:59:41 2024 +0100
+
+    Merge branch 'bug2' of https://github.com/maneva133/SI_2024_lab1_223167
+
+commit 5ec68466547e5e2f35c7b949923d98320cde7568 (origin/master, origin/bug2, bug2)
+Author: Maja <majamaneva51@gmail.com>
+Date:   Tue Mar 26 20:19:59 2024 +0100
+
+    Call method makeBigStringFrom in main class
+
+commit 70de33a08ede2dfd55b71b9bc96f76bd8cba79f8
+Author: Maja <majamaneva51@gmail.com>
+Date:   Tue Mar 26 20:16:31 2024 +0100
+
+    Fix wrong condition in makeBigStringFrom
+
+commit 0fa319aa68e7a209a45f6edd5312039845df653b
+Author: Maja <majamaneva51@gmail.com>
+Date:   Tue Mar 26 20:19:59 2024 +0100
+
+    Call method makeBigStringFrom in main class
+
+commit 6d799637a17753fa85070a0fb0745a72a7b66686 (origin/bug1, bug1)
+Author: Maja <majamaneva51@gmail.com>
+Date:   Tue Mar 26 20:18:42 2024 +0100
+
+    Call method filterOddLengthStrings in main class
+
+commit 4a01682ffe8de885c8677bc547361e0b40d054e5
+Author: Maja <majamaneva51@gmail.com>
+Date:   Tue Mar 26 20:16:31 2024 +0100
+
+    Fix wrong condition in makeBigStringFrom
+
+commit 953f08d29954074dee2063b814d4e25b4c4404b6
+Author: Maja <majamaneva51@gmail.com>
+Date:   Tue Mar 26 20:15:33 2024 +0100
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit cbb9c7d76b30867b15e25fef06a4905665cf4240
+Author: Maja <majamaneva51@gmail.com>
+Date:   Tue Mar 26 20:03:37 2024 +0100
+
+    Add starter code
+
+commit 9ace0979e3a688f4c5657d79fd0ebab93b9138d9
+Author: Maja <majamaneva51@gmail.com>
+Date:   Tue Mar 26 19:42:25 2024 +0100
+
+    Initial commit
+(END)
